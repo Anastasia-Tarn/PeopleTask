@@ -1,26 +1,26 @@
-public class PersonBuilder1 {
+public class PersonBuilder {
     private String name;
     private String surname;
     private int age;
     private String address;
 
 
-    public PersonBuilder1 setName(String name) {
+    public PersonBuilder setName(String name) {
         this.name = name;
         return this;
     }
 
-    public PersonBuilder1 setSurname(String surname) {
+    public PersonBuilder setSurname(String surname) {
         this.surname = surname;
         return this;
     }
 
-    public PersonBuilder1 setAge(int age) {
+    public PersonBuilder setAge(int age) {
         this.age = age;
         return this;
     }
 
-    public PersonBuilder1 setAddress(String address) {
+    public PersonBuilder setAddress(String address) {
         this.address = address;
         return this;
     }

@@ -57,7 +57,7 @@ public class Person {
 
     @Override
     public String toString() {
-        return name + " " + surname + " . Возраст " + age + ". Адрес: " + address + " ";
+        return name + " " + surname + ". Возраст " + age + ". Адрес: " + address + " ";
     }
 
     @Override
@@ -65,10 +65,9 @@ public class Person {
         return name.hashCode() + surname.hashCode();
     }
 
-    public PersonBuilder1 newChildBuilder() {
-        return new PersonBuilder1()
+    public PersonBuilder newChildBuilder() {
+        return new PersonBuilder()
                 .setSurname(surname)
-                .setAge(3)
                 .setAddress(address);
     }
 
